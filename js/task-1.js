@@ -2,7 +2,7 @@ function slugify(title) {
     const transformLower = title.toLowerCase();
     const transformArray = transformLower.split(' ');
     const transformString = transformArray.join('-')
-    return `"${transformString}"`;
+    return transformString;
 }
 
 console.log(slugify("Arrays for beginners"));                          // "arrays-for-beginners"

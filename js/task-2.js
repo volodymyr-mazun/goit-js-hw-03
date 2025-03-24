@@ -1,10 +1,10 @@
 function makeArray(firstArray, secondArray, maxLength) {
     const mergeArray = [].concat(firstArray, secondArray);
-    if (mergeArray > maxLength) {
-        return mergeArray;
-    } else {
+    if (mergeArray.length > maxLength) {
         const copyArray = mergeArray.slice(0, maxLength);
         return copyArray;
+    } else {
+        return mergeArray;
     }
 }
 
